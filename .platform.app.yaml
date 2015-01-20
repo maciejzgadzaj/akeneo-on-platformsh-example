@@ -32,8 +32,14 @@ disk: 2048
 
 # The mounts that will be performed when the package is deployed.
 mounts:
+    "/app/archive": "shared:files/archive"
     "/app/cache": "shared:files/cache"
+    "/app/config": "shared:files/config"
     "/app/logs": "shared:files/logs"
+    "/app/uploads/product": "shared:files/product"
+    "/web/bundles": "shared:files/bundles"
+    "/web/css": "shared:files/css"
+    "/web/js": "shared:files/js"
 
 # The hooks that will be performed when the package is deployed.
 hooks:
